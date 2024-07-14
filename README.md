@@ -1,6 +1,6 @@
 # Turborepo starter
 
-This is an official starter Turborepo.
+从 0 到 1 新建一个 supastarter，作为内容型工具站模板
 
 ## Using this example
 

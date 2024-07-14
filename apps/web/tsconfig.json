@@ -9,6 +9,7 @@
     "paths": {
       "@/*": ["./*"],
       "@ui/*": ["./modules/ui/*"],
+      "@saas/*": ["./modules/saas/*"]
     }
   },
   "include": [

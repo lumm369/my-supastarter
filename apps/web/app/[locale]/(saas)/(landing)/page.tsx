@@ -1,10 +1,10 @@
 import {useTranslations} from 'next-intl';
 
 export default function Landing() {
-  const t = useTranslations('Landing');
+  const t = useTranslations('landing');
   return(
     <>
-      <div>landing page</div>
+      <div className='container max-w-6xl pt-32 pb-16'>landing page</div>
     </>
   )
 }

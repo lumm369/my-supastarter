@@ -1,7 +1,7 @@
 export default function Blog() {
   return (
     <>
-      <div>Blog Page</div>
+      <div className="container max-w-6xl pt-32 pb-16">Blog Page</div>
     </>
   )
 }

@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "@mertasan/tailwindcss-variables": "^2.7.0",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.6",
+    "@tailwindcss/typography": "^0.5.13",
+    "@types/mertasan__tailwindcss-variables": "^2.6.1",
+    "eslint": "8.57.0",
+    "tailwindcss": "^3.4.4",
+    "tailwindcss-animate": "^1.0.7",
+    "@repo/typescript-config": "workspace:*"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-custom/base"
+    ],
+    "root": true
+  },
+  "main": "index.ts",
+  "name": "@repo/tailwind-config",
+  "private": true,
+  "version": "0.0.0"
+}

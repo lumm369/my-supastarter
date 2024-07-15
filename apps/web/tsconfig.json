@@ -9,7 +9,10 @@
     "paths": {
       "@/*": ["./*"],
       "@ui/*": ["./modules/ui/*"],
-      "@saas/*": ["./modules/saas/*"]
+      "@saas/*": ["./modules/saas/*"],
+      "@i18n": ["./modules/i18n"],
+      "@config": ["./config"],
+      "@shared/*": ["./modules/shared/*"]
     }
   },
   "include": [

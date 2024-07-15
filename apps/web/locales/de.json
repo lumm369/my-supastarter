@@ -1,8 +1,22 @@
 {
-  "Landing": {
-    "title": "Hallo Welt!"
+  "landing": {
+    "title": "Hello world!"
   },
-  "Pricing": {
-    "title": "Hallo Welt!"
+  "pricing": {
+    "title":"Hello world!"
+  },
+  "blog": {
+    "title": "blog page"
+  },
+  "faq": {
+    "title": "faq page"
+  },
+  "common": {
+    "menu": {
+      "blog": "Blog",
+      "login": "Login",
+      "pricing": "Pricing",
+      "faq": "FAQ"
+    }
   }
 }

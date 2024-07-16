@@ -1,4 +1,5 @@
-import {Header} from '@saas/shared/components/Header';
+import { Header } from '@saas/shared/components/Header';
+import { Footer } from '@saas/shared/components/Footer';
 import { PropsWithChildren } from 'react';
 
 export default function SaasLayout({
@@ -6,8 +7,9 @@ export default function SaasLayout({
 }: PropsWithChildren) {
   return (
     <>
-      <Header></Header>
+      <Header />
       <main className="min-h-screen">{children}</main>
+      <Footer />
     </>
   )
 }

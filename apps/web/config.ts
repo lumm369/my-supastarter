@@ -24,5 +24,8 @@ export const appConfig = {
         href: "/Blog",
       },
     ],
+  },
+  copyRight: {
+    llc: "WEBWISE SOLUTIONS LLC"
   }
 };

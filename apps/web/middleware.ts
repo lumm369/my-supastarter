@@ -1,14 +1,17 @@
-import createMiddleware from 'next-intl/middleware';
- 
-export default createMiddleware({
-  // A list of all locales that are supported
-  locales: ['en', 'de'],
- 
-  // Used when no locale matches
-  defaultLocale: 'en'
+import createMiddleware from "next-intl/middleware";
+import { NextRequest } from "next/server";
+import { appConfig } from "./config";
+
+const intlMiddleware = createMiddleware({
+  locales: appConfig.i18n.locales,
+  defaultLocale: appConfig.i18n.defaultLocale,
+  // localePrefix: "never",
 });
- 
+
+export default async function middleware(req: NextRequest) {
+  return intlMiddleware(req);
+}
+
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/(de|en)/:path*']
+  matcher: ["/((?!api|_next|.*\\..*).*)"],
 };

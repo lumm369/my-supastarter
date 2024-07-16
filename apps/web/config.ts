@@ -6,7 +6,6 @@ export const appConfig = {
       en: "English",
       es: "Español",
       de: "Deutsch",
-      fr: "asdf",
     },
     localeCurrencies: {
       en: "USD",

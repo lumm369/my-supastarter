@@ -4,6 +4,7 @@ import { cn } from "@/modules/ui/lib";
 import { Link, usePathname } from "@i18n";
 import { Logo } from "@shared/components/Logo";
 import { ColorModeToggle } from "@shared/components/ColorModeToggle";
+import { LocaleSwitch } from "@shared/components/LocaleSwitch";
 import { useTranslations } from "next-intl";
 import { useState, useEffect } from "react"
 import { useDebounceCallback } from "usehooks-ts"
@@ -88,6 +89,7 @@ const Header = () => {
             </div>
             <div className="flex flex-1 items-center justify-end gap-3">
               <ColorModeToggle />
+              <LocaleSwitch />
             </div>
           </div>
         </div>

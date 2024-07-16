@@ -1,4 +1,5 @@
 import {useTranslations} from 'next-intl';
+import {getLocale, getMessages} from 'next-intl/server';
 
 export default function Landing() {
   const t = useTranslations('landing');

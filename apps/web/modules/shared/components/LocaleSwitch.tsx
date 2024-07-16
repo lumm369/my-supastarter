@@ -36,9 +36,6 @@ export function LocaleSwitch() {
         <DropdownMenuRadioGroup
           value={value}
           onValueChange={(value) => {
-            console.log(value)
-            console.log(pathname)
-            console.log(router)
             setValue(value);
             router.replace(`/${value}/${pathname}?${searchParams.toString()}`);
           }}

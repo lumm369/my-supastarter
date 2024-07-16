@@ -16,7 +16,8 @@
       "blog": "Blog",
       "login": "Login",
       "pricing": "Pricing",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "dashboard": "Dashboard"
     }
   }
 }

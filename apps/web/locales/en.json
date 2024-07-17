@@ -9,7 +9,8 @@
     "title": "blog page"
   },
   "faq": {
-    "title": "faq page"
+    "title": "Frequently asked questions",
+    "description": "Do you have any questions? We have got you covered."
   },
   "common": {
     "menu": {

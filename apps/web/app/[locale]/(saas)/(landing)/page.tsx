@@ -1,11 +1,11 @@
-import {useTranslations} from 'next-intl';
-import {getLocale, getMessages} from 'next-intl/server';
+import { Hero } from "@/modules/saas/landing/components/Hero";
+import { FaqSection } from "@/modules/saas/landing/components/FaqSection";
 
 export default function Landing() {
-  const t = useTranslations('landing');
   return(
     <>
-      <div className='container max-w-6xl pt-32 pb-16'>landing page</div>
+      <Hero />
+      <FaqSection />
     </>
   )
 }

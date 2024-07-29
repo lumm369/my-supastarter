@@ -1,5 +1,5 @@
-import { Header } from '@saas/shared/components/Header';
-import { Footer } from '@saas/shared/components/Footer';
+import { Header } from '@/modules/marketing/shared/components/Header';
+import { Footer } from '@/modules/marketing/shared/components/Footer';
 import { PropsWithChildren } from 'react';
 
 export default function SaasLayout({

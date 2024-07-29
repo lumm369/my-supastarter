@@ -4,6 +4,7 @@ import "./globals.css";
 import {NextIntlClientProvider} from 'next-intl';
 import {getLocale, getMessages} from 'next-intl/server';
 import { ThemeProvider } from "next-themes";
+import { GradientBackgroundWrapper } from "@/modules/shared/components/GradientBackgroundWrapper";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,14 +27,12 @@ export default async function RootLayout({
 }>) {
   const locale = await getLocale();
   const messages = await getMessages();
-  console.log('locale', locale)
-  console.log(messages)
   return (
     <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class">
-            {children}
+            <GradientBackgroundWrapper>{children}</GradientBackgroundWrapper>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

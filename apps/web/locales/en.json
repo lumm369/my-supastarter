@@ -1,4 +1,13 @@
 {
+  "auth": {
+    "continueWithProvider": "Continue with {provider}",
+    "signup": {
+      "signIn": "Sign in",
+      "submit": "Create account",
+      "title": "Create an account",
+      "message": "We are happy that you want to join us. Please fill in the form below to create your account."
+    }
+  },
   "landing": {
     "title": "Hello world!"
   },

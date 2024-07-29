@@ -164,7 +164,7 @@ const Header = () => {
                   asChild
                   variant="secondary"
                 >
-                  <Link href="/auth/login">{t("common.menu.login")}</Link>
+                  <Link href="/auth/signup">{t("common.menu.login")}</Link>
                 </Button>
               )}
             </div>

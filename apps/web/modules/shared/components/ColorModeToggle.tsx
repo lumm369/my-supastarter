@@ -61,7 +61,6 @@ export function ColorModeToggle() {
         <DropdownMenuRadioGroup
           value={value}
           onValueChange={(value) => {
-            console.log('theme', theme)
             setTheme(value);
             setValue(value);
           }}

@@ -8,9 +8,27 @@ import { Alert, AlertDescription, AlertTitle } from "@/modules/ui/components/ale
 import { AlertTriangleIcon, ArrowRightIcon, EyeIcon, EyeOffIcon } from "lucide-react";
 import { Link } from "@i18n"
 import { SocialSigninButton, oAuthProviders } from "./SocialSigninButton";
+import { z } from "zod";
+import { SignUpSchema } from "@repo/server";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+
 
 export const SignupForm = async () => {
   const t = useTranslations()
+
+  const form = useForm<z.infer<typeof SignUpSchema>>({
+    resolver: zodResolver(SignUpSchema),
+    defaultValues: {
+      email: "",
+      password: ""
+    },
+  })
+
+  async function onSubmit(values: z.infer<typeof SignUpSchema>) {
+
+  }
+
   return (
     <div>
       <h1 className="text-3xl font-bold md:text-4xl">

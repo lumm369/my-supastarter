@@ -1,0 +1,37 @@
+{
+  "name": "@repo/server",
+  "main": "./index.ts",
+  "scripts": {
+    "db:generate": "prisma generate --schema=./database/prisma/schema.prisma",
+    "db:studio": "dotenv -c -e ../../.env -- prisma studio --schema=./database/prisma/schema.prisma",
+    "db:push": "dotenv -c -e ../../.env -- prisma db push --schema=./database/prisma/schema.prisma"
+  },
+  "dependencies": {
+    "@lucia-auth/adapter-prisma": "^4.0.1",
+    "@prisma/client": "^5.17.0",
+    "arctic": "^1.9.2",
+    "jsonwebtoken": "^9.0.2",
+    "lucia": "^3.2.0",
+    "next": "15.0.0-rc.0",
+    "nodemailer": "^6.9.14",
+    "oslo": "^1.2.1",
+    "react": "19.0.0-rc-f994737d14-20240522",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20",
+    "@types/nodemailer": "^6.4.15",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "dotenv-cli": "^7.4.2",
+    "eslint-config-next": "15.0.0-rc.0",
+    "prisma": "^5.17.0",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

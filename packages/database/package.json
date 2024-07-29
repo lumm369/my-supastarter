@@ -1,0 +1,27 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.ts",
+  "scripts": {
+    "db:generate": "prisma generate --schema=./prisma/schema.prisma",
+    "db:studio": "dotenv -c -e ../../.env -- prisma studio",
+    "db:push": "dotenv -c -e ../../.env -- prisma db push"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.17.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@repo/eslint-config": "workspace:*",
+    "@types/node": "^20",
+    "dotenv-cli": "^7.4.2",
+    "prisma": "^5.17.0",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
